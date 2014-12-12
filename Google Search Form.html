@@ -3,11 +3,9 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title>Maps API v3 Places Autocomplete form fill - jsFiddle demo by upsidown</title>
-  
+      <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
   
-  
-  <link rel="stylesheet" type="text/css" href="#">
   
     
       <script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
@@ -111,11 +109,25 @@ initialize();
 
 </head>
 <body>
-<form>
-  <div id="locationField">
-    <input id="autocomplete" placeholder="Enter your address" type="text"></input>
-</div><p>
-</p>
+    <form action="/contact" class="new_message" id="new_message" method="post"
+    name="new_message">
+        <div class="form-label-inline">
+            <fieldset>
+<div class="form-group">
+        <div id="locationField">
+    
+        <input id="autocomplete" placeholder="Enter Address" type="text" class="form-control required" name="message[name]">
+        
+            <label class="in" for="message_name">Full Address
+
+          </label>
+</div>
+</div>
+</fieldset>
+</div>
+
+<p></p>
+
 <table id="address">
     <tr>
         <td class="Street">Street address</td>
